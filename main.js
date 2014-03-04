@@ -14,3 +14,17 @@ var secondGreatLow = function (arr) {
 	minMax.push(Math.max.apply(null, x));
 	console.log(minMax);
 };
+
+var timeConvert = function(num) {
+	if (num >= 60) {
+		var h = Math.floor(num/60);
+		var m = num%60;
+		if (m < 10) {
+			m = "0"+m;
+		}
+		console.log(h+":"+m);
+	}
+	else {
+		console.log("0:"+num);
+	}
+};
